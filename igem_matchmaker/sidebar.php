@@ -36,7 +36,7 @@
 		        	<label class="control-label" for="teamName">Team name</label>
 		        	<div class="controls">
 		          		<input type="text" class="input-xlarge" id="teamName" name="team">
-		          		<p class="help-block">Enter your team name as it appears after "Team:" in the URL of your wiki home page. E.g., if your wiki URL is http://2012.igem.org/Team:NTNU_Trondheim, write "NTNU_Trondheim".</p>
+		          		<p class="help-block">Enter your team name as it appears after "Team:" in the URL of your wiki home page. E.g., if your wiki URL is http://2015.igem.org/Team:NTNU_Trondheim, write "NTNU_Trondheim".</p>
 		        	</div>
 		      	</div>
 		      	<div class="control-group">
@@ -134,7 +134,7 @@
 		        	<label class="control-label" for="teamName">Team name</label>
 		        	<div class="controls">
 		          		<input type="text" class="input-xlarge" id="teamName" name="team" <?php echo 'value="' . $team . '"';?>>
-		          		<p class="help-block">Enter your team name as it appears after "Team:" in the URL of your wiki home page. E.g., if your wiki URL is http://2012.igem.org/Team:NTNU_Trondheim, write "NTNU_Trondheim".</p>
+		          		<p class="help-block">Enter your team name as it appears after "Team:" in the URL of your wiki home page. E.g., if your wiki URL is http://2015.igem.org/Team:NTNU_Trondheim, write "NTNU_Trondheim".</p>
 		        	</div>
 		      	</div>
 		      	<div class="control-group"> 

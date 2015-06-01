@@ -6,7 +6,9 @@
 	<p><b>iGEM Matchmaker v2.2</b></p><br/>
 	<p>Designed and built with <a href="http://php.net/" target="_blank">PHP</a>, <a href="http://jquery.com/" target="_blank">jQuery</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>.</p>
 	<p>Icons by <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a> and <a href="http://www.famfamfam.com/" target="_blank">famfamfam.com</a>.</p>
-	<p><br />Created by <a href="http://twitter.com/oveoyas" target="_blank">Ove Øyås</a> @ <a href="http://2012.igem.org/Team:NTNU_Trondheim" target="_blank">iGEM NTNU 2012</a> <br/><i class="icon-envelope-alt"></i> <a href="mailto:igem.ntnu@gmail.com">igem.ntnu@gmail.com</a></p>
+	<p><br />Created by <a href="http://twitter.com/oveoyas" target="_blank">Ove Øyås</a> @ <a href="http://2015.igem.org/Team:NTNU_Trondheim" target="_blank">iGEM NTNU 2012</a> <br/><i class="icon-envelope-alt"></i> <a href="mailto:igem.ntnu@gmail.com">igem.ntnu@gmail.com</a></p>
+
+	<p><br />Developed on <a href="https://github.com/ychahibi/ntnu-trondheim-igem/">GitHub</a></p>
 </footer>
 </div><!-- /container -->
 

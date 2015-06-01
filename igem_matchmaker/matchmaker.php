@@ -25,7 +25,10 @@ else {
 	<!-- Nav for separating entries by year -->
 	<ul class="nav nav-tabs" id="year-nav">
 		<li class="disabled"></li>
-		<li <?php echo 'class="' . ($_GET['year']==2014 || !isset($_GET['year']) ? 'active">' : '">');?>
+		<li <?php echo 'class="' . ($_GET['year']==2015 || !isset($_GET['year']) ? 'active">' : '">');?>
+			<a href="?year=2015">2015</a>
+		</li>
+		<li <?php echo 'class="' . ($_GET['year']==2014 ? 'active">' : '">');?>
 			<a href="?year=2014">2014</a>
 		</li>
 		<li <?php echo 'class="' . ($_GET['year']==2013 ? 'active">' : '">');?>
@@ -42,8 +45,10 @@ else {
 		$result = mysql_query("SELECT * FROM mm_entries WHERE year=2012 ORDER BY time DESC");
 	} elseif ($_GET['year']==2013) {
 		$result = mysql_query("SELECT * FROM mm_entries WHERE year=2013 ORDER BY time DESC");
-	} else {
+	} elseif ($_GET['year']==2014) {
 		$result = mysql_query("SELECT * FROM mm_entries WHERE year=2014 ORDER BY time DESC");
+	} else {
+		$result = mysql_query("SELECT * FROM mm_entries WHERE year=2015 ORDER BY time DESC");
 	}
     if (!mysql_num_rows($result)) {
 		?>

@@ -3,7 +3,7 @@
 	<div class="hero-unit">
 		<h1>Hello, iGEM teams!</h1><br/>
 		<p>Are you looking for another team to cooperate with? Then you are in the right place. Try the Matchmaker and find other teams to help or be helped by!</p><br/>
-		<p><a class="btn btn-primary btn-large" href="/oyas/igem/igem_matchmaker/matchmaker.php"">Begin cooperating &raquo;</a></p>
+		<p><a class="btn btn-primary btn-large" href="matchmaker.php"">Begin cooperating &raquo;</a></p>
 	</div>
 </div>
 <div class="span4">

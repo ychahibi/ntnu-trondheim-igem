@@ -61,7 +61,7 @@ $error_msg_insert = '<div class="alert alert-error fade in"><a class="close" hre
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </a>
-	  <a class="brand" style="font-family: 'Permanent Marker'; font-size: 24px;" href="/oyas/igem/igem_matchmaker/">iGEM Matchmaker</a>
+	  <a class="brand" style="font-family: 'Permanent Marker'; font-size: 24px;" href="index.php">iGEM Matchmaker</a>
 	  <!--<div class="btn-group pull-right">
           <a class="btn" href="#"><i class="icon-user"></i> User</a>
           <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
@@ -76,7 +76,7 @@ $error_msg_insert = '<div class="alert alert-error fade in"><a class="close" hre
 	  <div class="nav-collapse">
 		<ul class="nav">
 			<li <?php echo 'class="' . (basename($_SERVER['SCRIPT_FILENAME'])=='index.php'? 'active">' : '">');?>
-				<a href="/oyas/igem/igem_matchmaker/">
+				<a href="index.php">
 				<?php echo '<i class="icon-home' . (basename($_SERVER['SCRIPT_FILENAME'])=='index.php'? ' icon-white">' : '">');?></i> Home</a>
 			</li>
 			<li <?php echo 'class="' . (basename($_SERVER['SCRIPT_FILENAME'])=='matchmaker.php'? 'active">' : '">');?>
@@ -85,7 +85,7 @@ $error_msg_insert = '<div class="alert alert-error fade in"><a class="close" hre
 			</li>
 			<li class="divider-vertical"></li>
 			<li>
-				<a href="http://2014.igem.org/Community" target="_blank"><i class="icon-group"></i> iGEM Community</a>
+				<a href="http://2015.igem.org/Community" target="_blank"><i class="icon-group"></i> iGEM Community</a>
 		</ul>
 		<form class="navbar-search pull-right" method="get" action="matchmaker.php" style="margin-right:0px;">
 			<i class="icon-search"></i>
