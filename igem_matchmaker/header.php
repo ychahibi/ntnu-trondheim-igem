@@ -45,9 +45,9 @@
 
 include("functions.php");
 
-$error_msg_select = '<div class="alert alert-error fade in"><a class="close" href="http://folk.ntnu.no/oyas/igem/igem_matchmaker/matchmaker.php">&times;</a>Error selecting from database. Please try again or contact igem.ntnu@gmail.com.</div>';
+$error_msg_select = '<div class="alert alert-error fade in"><a class="close" href="igem_matchmaker/matchmaker.php">&times;</a>Error selecting from database. Please try again or contact igem.ntnu@gmail.com.</div>';
 
-$error_msg_insert = '<div class="alert alert-error fade in"><a class="close" href="http://folk.ntnu.no/oyas/igem/igem_matchmaker/matchmaker.php">&times;</a>Error inserting into database. Please try again or contact igem.ntnu@gmail.com.</div>';
+$error_msg_insert = '<div class="alert alert-error fade in"><a class="close" href="igem_matchmaker/matchmaker.php">&times;</a>Error inserting into database. Please try again or contact igem.ntnu@gmail.com.</div>';
 
 ?>
   

@@ -836,8 +836,8 @@ table .span24 {
     */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('http://folk.ntnu.no/oyas/igem/igem_matchmaker/bootstrap/font/fontawesome-webfont.eot');
-  src: local('☺'), url('http://folk.ntnu.no/oyas/igem/igem_matchmaker/bootstrap/font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('http://folk.ntnu.no/oyas/igem/igem_matchmaker/bootstrap/font/fontawesome-webfont.ttf') format('truetype'), url('http://folk.ntnu.no/oyas/igem/igem_matchmaker/bootstrap/font/fontawesome-webfont.woff') format('woff'), url('http://folk.ntnu.no/oyas/igem/igem_matchmaker/bootstrap/font/fontawesome-webfont.svg#FontAwesome') format('svg');
+  src: url('igem_matchmaker/bootstrap/font/fontawesome-webfont.eot');
+  src: local('☺'), url('igem_matchmaker/bootstrap/font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('igem_matchmaker/bootstrap/font/fontawesome-webfont.ttf') format('truetype'), url('igem_matchmaker/bootstrap/font/fontawesome-webfont.woff') format('woff'), url('igem_matchmaker/bootstrap/font/fontawesome-webfont.svg#FontAwesome') format('svg');
   font-weight: normal;
   font-style: normal;
 }
