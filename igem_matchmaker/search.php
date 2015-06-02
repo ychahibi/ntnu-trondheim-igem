@@ -17,7 +17,7 @@ $numrows = mysql_num_rows($numresults);
 
 if ($numrows == 0) { ?>
 	<div class="alert alert-error fade in">
-		<a class="close" href="igem_matchmaker/matchmaker.php">&times;</a>
+		<a class="close" href="matchmaker.php">&times;</a>
         <?php echo "Sorry, your search for &quot;" . $trimmed . "&quot; did not return any results." ?>
     </div>
 <?php } else {
@@ -35,7 +35,7 @@ if ($numrows == 0) { ?>
 if ($trimmed != "") { ?>
 
 <div class="alert alert-info fade in">
-	<a class="close" href="igem_matchmaker/matchmaker.php">&times;</a>
+	<a class="close" href="matchmaker.php">&times;</a>
 	<strong><?php echo "You searched for &quot;" . $var . "&quot.<br/>"; ?></strong>
 	<?php
 		$a = $s + ($limit);

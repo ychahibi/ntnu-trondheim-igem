@@ -79,7 +79,7 @@ You are receiving this messsage because one of your entries in the iGEM Matchmak
 "	E-mail: " . $mail . "
 
 If this looks correct, please confirm the update of your entry by clicking the link below:\n
-igem_matchmaker/matchmaker.php?confirm_code=" . $confirm_code . "
+matchmaker.php?confirm_code=" . $confirm_code . "
 
 Thank you for using the iGEM Matchmaker!
 ";
@@ -88,7 +88,7 @@ Thank you for using the iGEM Matchmaker!
 		mail($to,$subject,$message,$headers);
 		?>		
 		<div class="alert alert-warning fade in">
-			<a class="close" href="igem_matchmaker/matchmaker.php">&times;</a>
+			<a class="close" href="matchmaker.php">&times;</a>
     		<strong>Waiting for confirmation</strong><br/> Your changes have been registered and a confirmation e-mail has been sent to <?php echo $mail;?>. Please click the link provided in the e-mail to confirm the update of your entry.
 		</div>
 		<?php
@@ -124,7 +124,7 @@ if(isset($_GET['confirm_code'])) {
 		
 		?>
 		<div class="alert alert-success fade in">
-        	<a class="close" href="igem_matchmaker/matchmaker.php">&times;</a>
+        	<a class="close" href="matchmaker.php">&times;</a>
 	        <strong>Entry updated</strong><br/> Your entry has been successfully updated!
 	    </div><?php
 
@@ -132,7 +132,7 @@ if(isset($_GET['confirm_code'])) {
 	// If no matching entries are found, display error message	
 	else { ?>
 		<div class="alert alert-error fade in">
-        	<a class="close" href="igem_matchmaker/matchmaker.php">&times;</a>
+        	<a class="close" href="matchmaker.php">&times;</a>
 	        <strong>Invalid or outdated confirmation code</strong><br/> No matches for your confirmation code were found. The confirmation code may may be invalid or outdated. Please try editing your entry again.
 	    </div><?php
 	}
