@@ -13,7 +13,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 	
     <!-- Styles -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
 		body {
 			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -22,20 +22,6 @@
         	padding: 9px 0;
       	}
 	</style>
-	<!-- Responsive css must be added after top padding -->
-    <link href="bootstrap/css/responsive.css" rel="stylesheet">
-    <link href="extras/css/extras.css" rel="stylesheet">
-	
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <!--<link rel="shortcut icon" href="img/icons/oyas-icon.ico" type="image/x-icon" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/oyas-icon-114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/oyas-icon-72.png">
-    <link rel="apple-touch-icon-precomposed" href="img/icons/oyas-icon-57.png">-->
 
 </head>
 
