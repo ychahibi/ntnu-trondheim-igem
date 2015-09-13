@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>iGEM Matchmaker</title>
@@ -9,78 +8,67 @@
     <meta name="author" content="">
 	
 	<!-- Google fonts -->    
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
-	
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
     <!-- Styles -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-		body {
-			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-		}
-		.sidebar-nav {
-        	padding: 9px 0;
-      	}
-	</style>
+    <!--link href="https://bootswatch.com/united/bootstrap.min.css" rel="stylesheet">-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="custom.css">
 
 </head>
 
 <body>
 
+
 <?php 
 
 include("functions.php");
 
-$error_msg_select = '<div class="alert alert-error fade in"><a class="close" href="matchmaker.php">&times;</a>Error selecting from database. Please try again or contact igem.ntnu@gmail.com.</div>';
+$error_msg_select = '<div class="alert alert-error fade in"--><a class="close" href="matchmaker.php">×</a>Error selecting from database. Please try again or contact igem.ntnu@gmail.com.';
 
-$error_msg_insert = '<div class="alert alert-error fade in"><a class="close" href="matchmaker.php">&times;</a>Error inserting into database. Please try again or contact igem.ntnu@gmail.com.</div>';
-
+$error_msg_insert = '<div class="alert alert-error fade in alert-warning alert-dismissable"><a class="close" href="matchmaker.php">×</a>Error inserting into database. Please try again or contact igem.ntnu@gmail.com.</div>';
 ?>
   
 <!-- Navbar
 ================================================== -->
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
+<div class="navbar navbar-static-top navbar-default">
 	<div class="container">
-	  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	  </a>
-	  <a class="brand" style="font-family: 'Permanent Marker'; font-size: 24px;" href="index.php">iGEM Matchmaker</a>
-	  <!--<div class="btn-group pull-right">
-          <a class="btn" href="#"><i class="icon-user"></i> User</a>
-          <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
-            <li><a href="#"><i class="icon-trash"></i> Delete</a></li>
-            <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
-            <li class="divider"></li>
-            <li><a href="#"><i class="i"></i> Make admin</a></li>
-          </ul>
-        </div>-->
-	  <div class="nav-collapse">
-		<ul class="nav">
+	    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" style="font-family: 'Patua One', cursive; font-size: 24px; font-weight: Bold;" href="index.php">iGEM Matchmaker</a>
+    </div>		  
+	  <div class="collapse navbar-collapse navbar-ex1-collapse">
+		<ul class="nav navbar-nav">
 			<li <?php echo 'class="' . (basename($_SERVER['SCRIPT_FILENAME'])=='index.php'? 'active">' : '">');?>
 				<a href="index.php">
-				<?php echo '<i class="icon-home' . (basename($_SERVER['SCRIPT_FILENAME'])=='index.php'? ' icon-white">' : '">');?></i> Home</a>
+				<?php echo '<i class="glyphicon glyphicon-home' . (basename($_SERVER['SCRIPT_FILENAME'])=='index.php'? ' icon-white">' : '">');?></i> Home</a>
 			</li>
 			<li <?php echo 'class="' . (basename($_SERVER['SCRIPT_FILENAME'])=='matchmaker.php'? 'active">' : '">');?>
 				<a href="matchmaker.php">
-				<?php echo '<i class="icon-heart' . (basename($_SERVER['SCRIPT_FILENAME'])=='matchmaker.php'? ' icon-white">' : '">');?></i> Matchmaker</a>
+				<?php echo '<i class="glyphicon glyphicon-heart' . (basename($_SERVER['SCRIPT_FILENAME'])=='matchmaker.php'? ' glyphicon-white">' : '">');?></i> Matchmaker</a>
 			</li>
 			<li class="divider-vertical"></li>
 			<li>
-				<a href="http://2015.igem.org/Community" target="_blank"><i class="icon-group"></i> iGEM Community</a>
+				<a href="http://2015.igem.org/Community" target="_blank"><i class="glyphicon glyphicon-globe"></i>iGEM Community</a>
+			</li>
 		</ul>
-		<form class="navbar-search pull-right" method="get" action="matchmaker.php" style="margin-right:0px;">
-			<i class="icon-search"></i>
-			<input type="text" name="q" class="input-medium search-query" placeholder="Search for collaborations">
-		</form>
-	  </div>
+		<form class="navbar-form navbar-right" method="get" action="matchmaker.php">
+			<i class="glyphicon glyphicon-search"></i>
+			<input type="text" name="q" class="input-medium search-query form-control" placeholder="Search for collaborations">
+		
+	  </form></div>
 	</div>
   </div>
 </div>
-
-<div class="container">
-	<div class="row-fluid">
+</body></html>

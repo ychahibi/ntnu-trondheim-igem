@@ -1,26 +1,26 @@
  <!-- Footer -->
 
 </div>
-<footer class="footer">
-	<p class="pull-right"><a href="#">To the top</a></p>
-	<p><b>iGEM Matchmaker v2.2</b></p><br/>
-	<p>Designed and built with <a href="http://php.net/" target="_blank">PHP</a>, <a href="http://jquery.com/" target="_blank">jQuery</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>.</p>
-	<p>Icons by <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a> and <a href="http://www.famfamfam.com/" target="_blank">famfamfam.com</a>.</p>
-	<p><br />Created by <a href="http://twitter.com/oveoyas" target="_blank">Ove Øyås</a> @ <a href="http://2015.igem.org/Team:NTNU_Trondheim" target="_blank">iGEM NTNU 2012</a> <br/><i class="icon-envelope-alt"></i> <a href="mailto:igem.ntnu@gmail.com">igem.ntnu@gmail.com</a></p>
+<div class="container">
+	<div class="footer">
+		<p class="pull-right"><a href="#">To the top</a></p>
+		<p><b>iGEM Matchmaker v3.0</b></p><br/>
+		<p>Designed and built with <a href="http://php.net/" target="_blank">PHP</a>, <a href="http://jquery.com/" target="_blank">jQuery</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>.</p>
+		<p>Icons by <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Font Awesome</a> and <a href="http://www.famfamfam.com/" target="_blank">famfamfam.com</a>.</p>
+		<p><br />Created by <a href="http://twitter.com/oveoyas" target="_blank">Ove Øyås</a> @ <a href="http://2012.igem.org/Team:NTNU_Trondheim" target="_blank">iGEM NTNU 2012</a> and <a href="http://twitter.com/ychahibi" target="_blank">Youssef Chahibi</a> @ <a href="http://2015.igem.org/Team:NTNU_Trondheim" target="_blank">iGEM NTNU 2015</a> <br/><i class="glyphicon glyphicon-envelope"></i> <a href="mailto:igem.ntnu@gmail.com">igem.ntnu@gmail.com</a></p> 
 
-	<p><br />Developed on <a href="https://github.com/ychahibi/ntnu-trondheim-igem/">GitHub</a></p>
-</footer>
+		<p><br />Developed on <a href="https://github.com/ychahibi/ntnu-trondheim-igem/">GitHub</a></p>
+	</div>
+</div>
 </div><!-- /container -->
 
 
 <!-- Javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="extras/js/sorttable.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/2.3.4/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
-
 <script type="text/javascript">
 	$('.tooltip-up').tooltip()
 	$('.tooltip-down').tooltip({
