@@ -2,10 +2,6 @@
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 <script type="text/javascript"  src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
-<?php
-	$string = file_get_contents("data/teamsMatchmaking_1442154848.16.json");
-	$json = json_decode($string, true);
-?>
 
 <div class="container">
 
@@ -35,7 +31,10 @@
 		<!-- Nav for separating entries by year -->
 		<ul class="nav nav-tabs" id="year-nav">
 			<li class="disabled"></li>
-			<li <?php echo 'class="' . ($_GET['year']==2015 || !isset($_GET['year']) ? 'active">' : '">');?>
+			<li <?php echo 'class="' . ($_GET['year']==2016 || !isset($_GET['year']) ? 'active">' : '">');?>
+				<a href="?year=2016">2016</a>
+			</li>
+			<li <?php echo 'class="' . ($_GET['year']==2015 ? 'active">' : '">');?>
 				<a href="?year=2015">2015</a>
 			</li>
 			<li <?php echo 'class="' . ($_GET['year']==2014 ? 'active">' : '">');?>
@@ -57,8 +56,10 @@
 			$result = mysql_query("SELECT * FROM mm_entries WHERE year=2013 ORDER BY time DESC");
 		} elseif ($_GET['year']==2014) {
 			$result = mysql_query("SELECT * FROM mm_entries WHERE year=2014 ORDER BY time DESC");
-		} else {
+		} elseif ($_GET['year']==2015) {
 			$result = mysql_query("SELECT * FROM mm_entries WHERE year=2015 ORDER BY time DESC");
+		} else {
+			$result = mysql_query("SELECT * FROM mm_entries WHERE year=2016 ORDER BY time DESC");
 		}
 	    if (!mysql_num_rows($result)) {
 			?>
