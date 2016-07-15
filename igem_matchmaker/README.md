@@ -9,7 +9,7 @@
 $ git clone  https://github.com/ychahibi/ntnu-trondheim-igem.git
 ```
 - Create the database structure in the command line
-```
+```shell
 $ mysql -u matchmaker_user -p < ntnu-trondheim-igem/igem_matchmaker/install/matchmaker_db.sql
 ```
 The file assumes the database name is "matchmaker_db"
