@@ -21,6 +21,11 @@
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="custom.css">
 
+<?php
+	$string = file_get_contents("data/teamsMatchmaking_2016.json");
+	$json = json_decode($string, true);
+?>
+
 </head>
 
 <body>
@@ -60,7 +65,7 @@ $error_msg_insert = '<div class="alert alert-error fade in alert-warning alert-d
 			</li>
 			<li class="divider-vertical"></li>
 			<li>
-				<a href="http://2015.igem.org/Community" target="_blank"><i class="glyphicon glyphicon-globe"></i>iGEM Community</a>
+				<a href="http://2016.igem.org/Community" target="_blank"><i class="glyphicon glyphicon-globe"></i>iGEM Community</a>
 			</li>
 		</ul>
 		<form class="navbar-form navbar-right" method="get" action="matchmaker.php">
