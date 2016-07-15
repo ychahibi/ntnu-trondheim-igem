@@ -1,6 +1,0 @@
-Example usage
-
-
-$ python downloadAllTeamsInfos.py -y 2016 -o teamsInfo.pkl
-$ python calculateKeywordWeights.py -i teamsInfo.pkl -o keywordsWeights.pkl -m MAUI/maui-standalone-1.1-SNAPSHOT.jar -e MAUI/data/models/keyword_extraction_model
-$ python matchmaker.py -t teamsInfo.pkl -i keywordsWeights.pkl -o teamsMatchmaking_2016.json
