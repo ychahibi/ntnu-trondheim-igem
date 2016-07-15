@@ -1,16 +1,18 @@
 ﻿# How to install iGEM Matchmaker
 
 - Install a Apache, PHP (5.x), MySQL environment
-- Create a MySQL database “<DATABASE_NAME>" for user “<USERNAME>” and password “<PASSWORD>”
-- In our example “matchmaker_db”, “matchmaker_user”, “matchmaker_password”
+- Create a MySQL database `"<DATABASE_NAME>"` for user `"<USERNAME>"` and password `"<PASSWORD>"`
+- In our example `"matchmaker_db"`, `"matchmaker_user"`, `"matchmaker_password"`
 - Obtain the Matchmaker files by download or using Git 
 - Download from: https://github.com/ychahibi/ntnu-trondheim-igem/archive/master.zip
+```
 $ git clone  https://github.com/ychahibi/ntnu-trondheim-igem.git
+```
 - Create the database structure in the command line
 ```
 $ mysql -u matchmaker_user -p < ntnu-trondheim-igem/igem_matchmaker/install/matchmaker_db.sql
 ```
-The file assumes the database name is “matchmaker_db"
+The file assumes the database name is "matchmaker_db"
 - Copy the file ntnu-trondheim-igem/igem_matchmaker/install/mysql_connect_install.php to ntnu-trondheim-igem/igem_matchmaker/mysql_connect.php 
 ```
 $ cp ntnu-trondheim-igem/igem_matchmaker/install/mysql_connect_install.php ntnu-trondheim-igem/igem_matchmaker/mysql_connect.php
@@ -25,19 +27,19 @@ $ perl -pi -e 's/<DATABASE>/matchmaker_db/' ntnu-trondheim-igem/igem_matchmaker
 
 # How to support a new year
 - Edit URLs for the new year
-- In file header.php, update the Community page link: 
+- In the file header.php, update the Community page link: 
 ```
 $ perl -pi -e 's/http:\/\/2015.igem.org\/Community/http:\/\/2016.igem.org\/Community/' ntnu-trondheim-igem/igem_matchmaker/header.php
 ```
-- In file score.php, update the template team page link: 
+- In the file score.php, update the template team page link: 
 ```
 $ perl -pi -e 's/http:\/\/2015.igem.org\/Team/http:\/\/2016.igem.org\/Team/' ntnu-trondheim-igem/igem_matchmaker/score.php
 ```
--In file score.php, update the template team page link: 
+- In the file score.php, update the template team page link: 
 ```
 $ perl -pi -e 's/http:\/\/2015.igem.org\/Team/http:\/\/2016.igem.org\/Team/' ntnu-trondheim-igem/igem_matchmaker/sidebar.php
 ```
-- In file matchmaker.php, change the following paragraph
+- In the file matchmaker.php, change the following paragraph
 
 ```
 			<li <?php echo 'class="' . ($_GET['year']==2015 || !isset($_GET['year']) ? 'active">' : '">');?>
@@ -91,6 +93,6 @@ $ cp ntnu-trondheim-igem/igem_matchmaker/backend/teamsMatchmaking_2016.json ntn
 ```
 - In the files header.php change the following line to the right file 
 ```
-$string = file_get_contents("data/teamsMatchmaking_2016.json”);
+$string = file_get_contents("data/teamsMatchmaking_2016.json");
 ```
 
