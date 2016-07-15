@@ -1,4 +1,6 @@
-﻿# How to install iGEM Matchmaker
+﻿The iGEM Matchmaker helps to find other teams interested in collaborating or helping a team out. The tool is currently hosted at http://almaaslab.nt.ntnu.no/igem_matchmaker/.
+
+# How to install iGEM Matchmaker
 
 - Install a Apache, PHP (5.x), MySQL environment
 - Create a MySQL database `"<DATABASE_NAME>"` for user `"<USERNAME>"` and password `"<PASSWORD>"`
@@ -9,7 +11,7 @@
 $ git clone  https://github.com/ychahibi/ntnu-trondheim-igem.git
 ```
 - Create the database structure in the command line
-```shell
+```
 $ mysql -u matchmaker_user -p < ntnu-trondheim-igem/igem_matchmaker/install/matchmaker_db.sql
 ```
 The file assumes the database name is "matchmaker_db"
