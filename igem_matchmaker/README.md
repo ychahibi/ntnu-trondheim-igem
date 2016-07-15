@@ -14,14 +14,14 @@ The file assumes the database name is “matchmaker_db"
 - Copy the file ntnu-trondheim-igem/igem_matchmaker/install/mysql_connect_install.php to ntnu-trondheim-igem/igem_matchmaker/mysql_connect.php 
 ```
 $ cp ntnu-trondheim-igem/igem_matchmaker/install/mysql_connect_install.php ntnu-trondheim-igem/igem_matchmaker/mysql_connect.php
-- Set the hostname, database, username and password for ```the database
+```
+- Set the hostname, database, username and password for the database
 ```
 $ perl -pi -e 's/<HOSTNAME>/localhost/' ntnu-trondheim-igem/igem_matchmaker/mysql_connect.php
 $ perl -pi -e 's/<USERNAME>/matchmaker_user/' ntnu-trondheim-igem/igem_matchmaker/mysql_connect.php
 $ perl -pi -e 's/<PASSWORD>/matchmaker_password/' ntnu-trondheim-igem/igem_matchmaker/mysql_connect.php
 $ perl -pi -e 's/<DATABASE>/matchmaker_db/' ntnu-trondheim-igem/igem_matchmaker/mysql_connect.php
 ```
-
 
 # How to support a new year
 - Edit URLs for the new year
