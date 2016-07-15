@@ -41,7 +41,7 @@ $ perl -pi -e 's/http:\/\/2015.igem.org\/Team/http:\/\/2016.igem.org\/Team/' ntn
 ```
 - In the file matchmaker.php, change the following paragraph
 
-```
+```php
 			<li <?php echo 'class="' . ($_GET['year']==2015 || !isset($_GET['year']) ? 'active">' : '">');?>
 
 				<a href="?year=2015">2015</a>
@@ -49,7 +49,7 @@ $ perl -pi -e 's/http:\/\/2015.igem.org\/Team/http:\/\/2016.igem.org\/Team/' ntn
 			</li>
 ```
 to the following
-```
+```php
 			<li <?php echo 'class="' . ($_GET['year']==2016 || !isset($_GET['year']) ? 'active">' : '">');?>
 
 				<a href="?year=2016">2016</a>
@@ -63,7 +63,7 @@ to the following
 			</li>
 ```
 And this paragraph
-```
+```php
 			} else {
 
 				$result = mysql_query("SELECT * FROM 			mm_entries WHERE year=2015 ORDER BY time DESC");
@@ -71,7 +71,7 @@ And this paragraph
 			}
 ```
 to the following
-```
+```php
 			} elseif ($_GET['year']==2015) {
 				$result = mysql_query("SELECT * FROM mm_entries WHERE year=2015 ORDER BY time DESC");
 			} else {
